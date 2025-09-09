@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration Form</title>
+    <h1>User Registration Form</h1>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <legend>Personal Information</legend>
+        <label for=fname>First name</label>
+        <input type="text" name="fname" id="fname"><br></br>
+        <label for=lname>Last name</label>
+        <input type="text" name="lname" id="lname"><br></br>
+        <label for=DOB>Date of Birth</label>
+        <input type="date" name="DOB" id="DOB"><br></br>
+        <label for=age>Age</label>
+        <input type="number" name="Age" id="Age" min="1" max="200" step="1"><br></br>
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+        </div>
+        <label for=Pphoto>Profile Photo</label>
+        <input type="file" name="Pphoto" id="Pphoto"><br></br>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+        <legend>Contact & Adress Information</legend>
+        <label for=email>Email Address</label>
+        <input type="email" name="email" id="email" required><br></br>
+        <label for=pnumner>Phone Number</label>
+        <input type="tel" name="pnumner" id="pnumner"><br></br>
+        <label for=pwebsite>Personal Website</label>
+        <input type="url" name="pwebsite" id="pwebsite" placeholder="https://example.com"><br></br>
+        <label for=saddress>Street Address</label>
+        <input type="" name="saddress" id="saddress"><br></br>
+        <label for=city>City</label>
+        <input type="text" name="city" id="city"><br></br>
+        <div>
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="kenya">Kenya</option>
+                <option value="uganda">Uganda</option>
+                <option value="tanznia">Tanznia</option>
+            </select>
+        </div><br>
+        <label for=z/pcode>ZIP/Postal Code</label>
+        <input type="" name="z/pcode" id="z/pcode"><br></br>
+        <label for=pctime>Prefered Contact Time</label>
+        <input type="time" name="pctime" id="pctime"><br></br>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>Preferences & Interests</legend>
+            <label for=fcolor>Favorite Color</label>
+            <input type="color" name="fcolor" id="fcolor"><br></br>
+            <label for="elevel">Experience Level</label>
+            <input type="range" name="elevel" id="elevel" min1 max10><br></br>
+            <label for="bmonth">Birth Month</label>
+            <input type="month" name="bmonth" id="bmonth"><br></br>
+            <label for="aweek">Available Week</label>
+            <input type="week" name="aweek" id="aweek"><br></br>
+            <label for="skeywords">Search Key Words</label>
+            <input type="search" name="skeywords" id="skeywords" placeholder="Enter Keywords"><br></br>
+            <div>
+                Interests(Select all that apply):
+                <div>
+                    <label for="technology">Technology</label>
+                    <input type="checkbox" name="technology" id="technology">
+                </div>
+                <div>
+                    <label for="sports">Sports</label>
+                    <input type="checkbox" name="sports" id="sports">
+                </div>
+                <div>
+                    <label for="music">Music</label>
+                    <input type="checkbox" name="music" id="music">
+                </div>
+                <div>
+                    <label for="travel">Travel</label>
+                    <input type="checkbox" name="travel" id="travel">
+                </div>
+                <div>
+                    <label for="reading">Reading</label>
+                    <input type="checkbox" name="reading" id="reading">
+                </div>
+                <div>
+                    <label for="cooking">Cooking</label>
+                    <input type="checkbox" name="cooking" id="cooking">
+                </div>
+            </div>
+            <label for="elevel">Education Level</label>
+            <input type="text" name="elevel" id="elevel" placeholder="Select Education Level"><br></br>
+            <label for="cpassword">Create Password</label>
+            <input type="password" name="cpassword" id="cpassword"><br></br>
+            <label for="cfpassword">Confirm Password</label>
+            <input type="password" name="cfpassword" id="cfpassword"><br></br>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            Tell us about yourself: <br>
+            <textarea name="myself" rows="4" cols="50">
+                write here
+            </textarea>
+             Suggestion for improvement: <br>
+            <textarea name="myself" rows="4" cols="50">
+                write here
+            </textarea>
+            <label for="dandt">Registration date & Time</label>
+            <input type="datetime-local" name="dandt" id="dandt"><br></br>
+            <div>
+                <label for="how did you hear about us">How did you hear about us</label>
+                <select name="how did you hear about us" id="how did you hear about us">
+                    <option value="friends">Friends</option>
+                    <option value="facebook">Facebook</option>
+                    <option value="posters">Posters</option>
+                </select>
+            </div><br>
+            <label for="upload">Upload Resume(optional)</label>
+            <input type="file" name="upload" id="upload" placeholder="Choose File"><br></br>
+            <label for="sbscrb">Subscribe to our newsletter</label>
+            <input type="checkbox" name="sbscrb" id="sbscrb"><br></br>
+            <label for="terms">I agree to the terms & Conditions</label>
+            <input type="checkbox" name="terms" id="terms"><br></br>
+            <label for="privacy">I agree to the Privacy Policy</label>
+            <input type="checkbox" name="privacy" id="privacy"><br></br>
+            </fieldset>
+    </form><br></br>
+    <button type="register">Register</button>
+            <button type="button">Clear Form</button>
+
+    
+</body>
+</html>
